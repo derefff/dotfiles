@@ -1,0 +1,125 @@
+configuration {
+  modi: "drun,run";
+  width: 550;
+  lines: 12;
+}
+* {
+	background: #262931;
+	foreground: #cccccc;
+	text: #cccccc;
+	border: #dddddd;
+	selected: #dddddd;
+	selected-text: #262931;
+	
+}
+window {
+	width: var(width, 38%);
+	background-color: @background;
+	border:0;
+	padding: 20;
+	font: "Hack 12";
+}
+#mainbox {
+	padding: 10;
+}
+
+#message {
+	border: 4px 4px 4px;
+	padding:20;
+}
+
+#textbox {
+	text-color: @text;
+}
+
+#listview {
+	fixed-height: 0;
+	border: 2px 0 0px;
+	border-color: @border;
+	spacing: 5px;
+	padding: 5 0 0;
+}
+
+#element {
+	border: 0;
+	padding: 3;
+}
+
+#element.normal.normal {
+	background-color: @background;
+	text-color: @text;
+}
+
+#element.normal.urgent {
+	background-color: @background;
+	text-color: @text;
+}
+
+#element.normal.active {
+	background-color: @background;
+	text-color: @text;
+}
+
+#element.selected.normal {
+	background-color: @selected;
+	text-color: @selected-text;
+}
+#element.selected.active{
+	background-color: @background;
+	text-color: @text;
+}
+
+#element.selected.urgent{
+	background-color: @background;
+	text-color: @text;
+}
+
+#element.alternate.normal{
+	background-color: @background;
+	text-color: @text;
+}
+#element.alternate.active{
+	background-color: @background;
+	text-color: @text;
+}
+
+#element.alternate.urgent{
+	background-color: @background;
+	text-color: @text;
+}
+
+#scrollbar {
+	width:4px;
+	border:0;
+	handle-width: 8px;
+	padding:0;
+}
+
+#sidebar {
+	border:2px 0px 0px;
+	border-color: @background;
+}
+#button{
+	text-color: #ff0000;
+}
+
+#inputbar{
+	spacing: 0;
+	text-color: #fff;
+	padding: 1px;
+}
+
+#case-indicator {
+	spacing:0;
+	text-color: #ff0000;
+}
+#entry {
+	spacing:0;
+	text-color: #fff;
+	placeholder: "Type here for results... UwU";
+}
+
+#prompt{
+	spacing:10;
+	text-color: @text;
+}

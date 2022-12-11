@@ -1,0 +1,32 @@
+/*.thunar .view {background-color: #ff0000;}
+ * 
+
+
+/* sidebar */
+/*
+.thunar .sidebar .view { 
+background-color: #262931; 
+color: #ccc;
+border:none;
+}
+*/
+/* main view */
+/*
+.thunar .standard-view .view { background-color: blue; }*/
+/* status bar */
+/*
+.thunar grid paned grid  { 
+background-color: #262931;
+color: #ccc;D
+}
+*/
+/* toolbar */
+/*
+.thunar toolbar, .thunar toolbar entry  { 
+background-color: #262931; 
+color: #ccc;
+}
+*/
+/*
+.thunar scrolledwindow { border-width: 0 }
+*/

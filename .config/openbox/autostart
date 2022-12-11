@@ -1,0 +1,10 @@
+
+tint2 &
+
+
+./.config/helper_scripts/monitors.sh &
+(sleep 7 && nitrogen ./Pobrane/wallpaper.png --set-scaled)&
+setxkbmap pl &
+parcellite &
+
+

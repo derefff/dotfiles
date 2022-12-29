@@ -2,12 +2,6 @@
 <openbox_menu>
     <menu id="root-menu" label="OpenBox 3">
         <menu id="1" label="Development">
-            <item label="CMake"> <action name="Execute">
-                <execute>cmake-gui</execute>
-            </action> </item>
-            <item label="CMake curses GUI (ccmake)"> <action name="Execute">
-                <execute>xterm -e ccmake</execute>
-            </action> </item>
             <item label="Electron 18"> <action name="Execute">
                 <execute>electron18</execute>
             </action> </item>
@@ -39,6 +33,9 @@
             </menu>
         </menu>
         <menu id="6" label="Graphics">
+            <item label="XColor"> <action name="Execute">
+                <execute>xcolor -s</execute>
+            </action> </item>
             <item label="XDvi"> <action name="Execute">
                 <execute>xdvi</execute>
             </action> </item>
@@ -47,6 +44,12 @@
             </action> </item>
         </menu>
         <menu id="7" label="Multimedia">
+            <item label="mpv Media Player"> <action name="Execute">
+                <execute>mpv --player-operation-mode=pseudo-gui</execute>
+            </action> </item>
+            <item label="ncspot"> <action name="Execute">
+                <execute>xterm -e ncspot</execute>
+            </action> </item>
             <item label="Qt V4L2 test Utility"> <action name="Execute">
                 <execute>qv4l2</execute>
             </action> </item>
@@ -67,11 +70,17 @@
             <item label="FireFox"> <action name="Execute">
                 <execute>firefox</execute>
             </action> </item>
+            <item label="Remmina"> <action name="Execute">
+                <execute>remmina-file-wrapper</execute>
+            </action> </item>
             <item label="TkVNC"> <action name="Execute">
                 <execute>xterm -e tkvnc</execute>
             </action> </item>
         </menu>
         <menu id="3" label="Office">
+            <item label="Komikku"> <action name="Execute">
+                <execute>komikku</execute>
+            </action> </item>
             <item label="Obsidian"> <action name="Execute">
                 <execute>obsidian</execute>
             </action> </item>
@@ -88,20 +97,14 @@
             </action> </item>
         </menu>
         <menu id="19" label="Shells">
+            <item label="Alacritty"> <action name="Execute">
+                <execute>alacritty</execute>
+            </action> </item>
             <item label="GIT"> <action name="Execute">
                 <execute>xterm -e git</execute>
             </action> </item>
             <item label="Thunar File Manager"> <action name="Execute">
                 <execute>thunar</execute>
-            </action> </item>
-            <item label="urxvt"> <action name="Execute">
-                <execute>urxvt</execute>
-            </action> </item>
-            <item label="urxvt (client)"> <action name="Execute">
-                <execute>urxvtc</execute>
-            </action> </item>
-            <item label="urxvt (tabbed)"> <action name="Execute">
-                <execute>urxvt-tabbed</execute>
             </action> </item>
             <item label="UXTerm"> <action name="Execute">
                 <execute>uxterm</execute>
@@ -112,14 +115,23 @@
         </menu>
         <menu id="37" label="System">
             <menu id="36" label="Settings">
+                <item label="Customize Look and Feel"> <action name="Execute">
+                    <execute>lxappearance</execute>
+                </action> </item>
                 <item label="File Manager Settings"> <action name="Execute">
                     <execute>thunar-settings</execute>
+                </action> </item>
+                <item label="iwgtk"> <action name="Execute">
+                    <execute>iwgtk</execute>
                 </action> </item>
                 <item label="nitrogen"> <action name="Execute">
                     <execute>nitrogen</execute>
                 </action> </item>
                 <item label="Openbox Configuration Manager"> <action name="Execute">
                     <execute>obconf</execute>
+                </action> </item>
+                <item label="Qt5 Settings"> <action name="Execute">
+                    <execute>qt5ct</execute>
                 </action> </item>
                 <item label="Tint2 Settings"> <action name="Execute">
                     <execute>tint2conf</execute>
@@ -128,14 +140,20 @@
             <item label="Avahi Zeroconf Browser"> <action name="Execute">
                 <execute>avahi-discover</execute>
             </action> </item>
-            <item label="pstree"> <action name="Execute">
-                <execute>xterm -e /usr/bin/pstree.x11</execute>
+            <item label="Hardware Locality lstopo"> <action name="Execute">
+                <execute>lstopo</execute>
+            </action> </item>
+            <item label="Htop"> <action name="Execute">
+                <execute>xterm -e htop</execute>
+            </action> </item>
+            <item label="Pstree"> <action name="Execute">
+                <execute>xterm -e pstree.x11</execute>
             </action> </item>
             <item label="pstree"> <action name="Execute">
                 <execute>xterm -e pstree</execute>
             </action> </item>
             <item label="pstree"> <action name="Execute">
-                <execute>xterm -e pstree.x11</execute>
+                <execute>xterm -e /usr/bin/pstree.x11</execute>
             </action> </item>
             <item label="TeXconfig"> <action name="Execute">
                 <execute>xterm -e texconfig</execute>

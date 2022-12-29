@@ -70,11 +70,22 @@ if !has('gui_running')
     set term=screen-256color
 endif
 
+"PLUGINS
+call plug#begin()
+
+Plug 'vim-airline/vim-airline'
+Plug 'terryma/vim-multiple-cursors'
+
+call plug#end()
+
+
 " enable true colors support
 
+"MIT scheme (Lisp)
 "autocmd FileType scheme inoremap ( (  )<Esc>T(<space>i
 
-""inoremap <Space><Space> <Esc>/<Enter>"_c4l
+"LaTeX"
+"inoremap <Space><Space> <Esc>/<Enter>"_c4l
 let g:tex_flavor='latex'
 
 autocmd FileType tex inoremap ;i \textit{}<Esc>T{i

@@ -354,7 +354,7 @@
     </keybind>
     <keybind key="W-S-s">
       <action name="Execute">
-        <command>scrot -s</command>
+        <command>scrot -s -f</command>
       </action>
     </keybind>
     

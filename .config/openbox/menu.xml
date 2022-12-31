@@ -14,6 +14,9 @@
             <item label="Python"> <action name="Execute">
                 <execute>xterm -e python</execute>
             </action> </item>
+            <item label="Visual Studio Code"> <action name="Execute">
+                <execute>code</execute>
+            </action> </item>
         </menu>
         <menu id="2" label="Editors">
             <item label="Vim"> <action name="Execute">
@@ -31,6 +34,12 @@
                     <execute>pacman</execute>
                 </action> </item>
             </menu>
+            <item label="Heroic Games Launcher"> <action name="Execute">
+                <execute>heroic</execute>
+            </action> </item>
+            <item label="Lutris"> <action name="Execute">
+                <execute>lutris</execute>
+            </action> </item>
         </menu>
         <menu id="6" label="Graphics">
             <item label="XColor"> <action name="Execute">
@@ -177,6 +186,9 @@
             </action> </item>
             <item label="TeXdoctk"> <action name="Execute">
                 <execute>texdoctk</execute>
+            </action> </item>
+            <item label="Winetricks"> <action name="Execute">
+                <execute>winetricks --gui</execute>
             </action> </item>
         </menu>
         <separator/>

@@ -2,5 +2,12 @@ black: 000
 white:fff
 slightly gray: 999
 gray-blue:424153
+darker-gray-blue: 262931
 slightly white : ccc
 red: ff0044
+light-green: 6a994e
+dark-green: 386641
+blue: 4d9de0
+yellow: ffc914
+purple: 822e81
+orange: E28413

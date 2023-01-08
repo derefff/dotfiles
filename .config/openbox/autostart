@@ -3,7 +3,7 @@ tint2 &
 
 
 ./.config/helper_scripts/monitors.sh &
-(sleep 7 && nitrogen ~/.config/wallpapers/wallpaper.png --set-scaled)&
+(sleep 4 && nitrogen ~/.config/wallpapers/wallpaper.png --set-scaled)&
 setxkbmap pl &
 parcellite &
 

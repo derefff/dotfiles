@@ -1,6 +1,6 @@
-" enable syntax
-syntax on
-syntax enable
+" enable syntax syntax on syntax enable
+" mouse support (pls don't hate ;_;)
+set mouse=a
 
 " enable line numbers
 set number

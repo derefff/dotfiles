@@ -63,7 +63,7 @@ window.inactive.button.disabled.image.color: #c0c0c0
 !! Borders
 window.inactive.title.separator.color: #262931
 window.active.title.separator.color: #262931
-border.color: #262631
+border.color: #262931
 border.width: 2
 padding.width: 10
 padding.height: 5

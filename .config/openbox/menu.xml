@@ -2,6 +2,9 @@
 <openbox_menu>
     <menu id="root-menu" label="OpenBox 3">
         <menu id="1" label="Development">
+            <item label="Electron"> <action name="Execute">
+                <execute>electron</execute>
+            </action> </item>
             <item label="Electron 18"> <action name="Execute">
                 <execute>electron18</execute>
             </action> </item>
@@ -42,6 +45,12 @@
             </action> </item>
         </menu>
         <menu id="6" label="Graphics">
+            <item label="GraphicsMagick"> <action name="Execute">
+                <execute>gm display logo:</execute>
+            </action> </item>
+            <item label="Inkscape"> <action name="Execute">
+                <execute>inkscape</execute>
+            </action> </item>
             <item label="XColor"> <action name="Execute">
                 <execute>xcolor -s</execute>
             </action> </item>
@@ -78,6 +87,9 @@
             </action> </item>
             <item label="FireFox"> <action name="Execute">
                 <execute>firefox</execute>
+            </action> </item>
+            <item label="Microsoft Teams - Preview"> <action name="Execute">
+                <execute>teams</execute>
             </action> </item>
             <item label="Remmina"> <action name="Execute">
                 <execute>remmina-file-wrapper</execute>

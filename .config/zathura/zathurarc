@@ -1,0 +1,24 @@
+# settings
+set selection-clipboard clipboard
+set guioptions "sv"
+set pages-per-row 1
+set adjust-open "best-fit"
+
+# colors
+set default-bg \#262931
+set statusbar-bg \#202325
+set statusbar-fg \#cccccc
+
+
+set notification-bg \#424153
+set notification-fg \#cccccc
+set notification-error-bg \#ff0044
+set notification-error-fg \#262931
+
+set notification-warning-bg \#ffc914
+set notification-warning-bg \#262931
+
+set inputbar-fg \#6a994e
+
+set highlight-color \#6a994e
+set highlight-active-color \#4d9de0

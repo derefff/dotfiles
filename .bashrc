@@ -8,6 +8,7 @@
 alias kalendarz=calcurse
 alias spotify=ncspot
 alias excel=sc-im
+alias kalkulator=qalculate-gtk
 
 alias ls='ls --color=auto'
 alias ..='cd ..'

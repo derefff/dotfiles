@@ -5,9 +5,9 @@
 menu.items.bg:Flat Solid
 menu.items.bg.color: #262931
 menu.border.width: 5
-menu.border.height: 15
+menu.border.height: 17 
 menu.border.color: #262931
-menu.overlap.x: -6
+menu.overlap.x: -1
 menu.overlap.y: 0
 
 !! Menu text
@@ -80,7 +80,9 @@ menu.items.font:shadow=0:shadowtint=0
 !! On-screen displays (alt + tab)
 osd.bg: Solid Flat
 osd.bg.color: #262931
-osd.border.width: 10
-osd.border.heigth: 10
-osd.border.color: #262931
+osd.padding.width: 10
+osd.padding.height: 10
+osd.border.width: 1
+osd.border.heigth: 1
+osd.border.color: #181818
 

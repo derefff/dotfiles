@@ -6,5 +6,6 @@ tint2 &
 (sleep 4 && nitrogen ~/.config/wallpapers/wallpaper.png --set-scaled)&
 setxkbmap pl &
 parcellite &
+fcitx5 &
 
 

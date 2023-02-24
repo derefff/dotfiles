@@ -75,6 +75,7 @@ call plug#begin()
 
 Plug 'vim-airline/vim-airline'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'ziglang/zig.vim'
 
 call plug#end()
 

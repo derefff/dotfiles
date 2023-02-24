@@ -4,11 +4,13 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+#alias sudo='doas'
+alias cat='bat'
 
-alias kalendarz=calcurse
-alias spotify=ncspot
-alias excel=sc-im
-alias kalkulator=qalculate-gtk
+alias kalendarz='calcurse'
+alias spotify='ncspot'
+alias excel='sc-im'
+alias kalkulator='qalculate-gtk'
 
 alias ls='ls --color=auto'
 alias ..='cd ..'

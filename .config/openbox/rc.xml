@@ -338,7 +338,7 @@
     </keybind>
     <keybind key="S-A-d">
       <action name="Execute">
-        <command> Thunar</command>
+        <command> nemo</command>
       </action>
     </keybind>
     <keybind key="A-Return">

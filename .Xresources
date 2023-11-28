@@ -1,8 +1,8 @@
-! Use a nice truetype font and size by default... 
+!Use a nice truetype font and size by default... 
 xterm*faceName: Hack
 xterm*faceSize: 12
 
-! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+!Every shell is a login shell by default 
 xterm*loginshell: true
 
 ! terminal colours
@@ -37,6 +37,6 @@ xterm*vt100*geometry: 70x25
 *color7:    #CCCCCC
 *color15:   #F8F8F2
 
-XTerm*vt100.translations: #override \
-    Shift Ctrl <Key> C: copy-selection(CLIPBOARD) \n\
-    Shift Ctrl <Key> V: insert-selection(CLIPBOARD)
+xterm*VT100.Translations: #override \
+                 Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+                 Ctrl Shift <Key>C:    copy-selection(CLIPBOARD)

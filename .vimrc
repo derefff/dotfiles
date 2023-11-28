@@ -77,6 +77,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ziglang/zig.vim'
 Plug 'mattn/emmet-vim'
+Plug 'psliwka/vim-smoothie'
 call plug#end()
 
 
@@ -98,6 +99,9 @@ autocmd FileType tex inoremap ;qe $$<Esc>2T$ii
 autocmd FileType tex inoremap ;eq $$$$<Esc>2T$i 
 autocmd FileType tex inoremap ;fig \begin{center}<Enter>\centering<Enter>\includegraphics[width=0.65\linewidth]{"placeholder.png"}<Enter>\captionof{figure}{placeholder}<Enter>\end{center}<Esc>
 
+"quick todo snippet
+auto FileType * inoremap ;td  - []<Space>
+auto FileType * inoremap ;d <Esc>T[iX<Esc>
 
 "remove trailing whitespace from Python files
 autocmd BufWritePre *.py :%s/\s\+$//e

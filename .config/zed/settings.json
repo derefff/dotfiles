@@ -1,0 +1,32 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette
+// Projects Online By Default
+{
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "buffer_font_family": "Cousine Nerd Font Mono",
+  "buffer_line_height": "comfortable",
+  "theme": {
+    "mode": "system",
+    "light": "One Dark",
+    "dark": "One Dark"
+  },
+  "cursor_blink": false,
+  "current_line_highlight": "all",
+  "tabs": {
+    "file_icons": true
+  },
+  "soft_wrap": "editor_width",
+  //------------------------------- TABS
+  "tab_size": 2,
+  "remove_trailing_whitespace_on_save": true,
+  //------------------------------- BLASPHEMY
+  "project_online_by_default": false
+}

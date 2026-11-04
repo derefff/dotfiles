@@ -1,0 +1,14 @@
+#List of programs in case Iforget what should I use (mostly terminal apps)
+calendar = calcurse
+excel = sc-im
+translator = trans (translate-shell)
+resources = htop
+aur-helper = paru
+text editor = vim
+pdf viewer = zathura
+markdown renderer = glow
+doc converter = pandoc
+image viewer = feh
+spotify client = ncspot
+
+

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+    "constants": [
+      "─────────────────", // {$1}, used in Custom module
+    ],
+    "key": {
+      "paddingLeft": 2,
+    },
+    //"color": "38;2;166;71;23",
+    "color": "38;2;213;82;38",
+  },
+  "logo": {
+    "type": "auto",
+    "color": {
+      "1": "38;2;213;82;38",
+      "2": "38;2;213;82;38",
+      //"2": "38;2;231;120;14",
+    },
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "╭{$1} OS INFO ─{$1}╮",
+      //"outputColor": "default",
+    },
+    {
+      "type": "title",
+      "key": "User",
+      "format": "{user-name}",
+      "color": "38;2;166;71;23",
+    },
+    {
+      "type": "title",
+      "key": "Hostname",
+      "format": "{host-name}",
+    },
+    {
+      "type": "os",
+      "format": "{pretty-name} {version-id} {arch}",
+    },
+    "kernel",
+    "uptime",
+    {
+      "type": "custom",
+      "format": "├{$1} HARDWARE {$1}┤",
+      "outputColor": "default",
+    },
+    {
+      "type": "cpu",
+      "key": "CPU",
+      "format": "{cores-logical} x {name}",
+    },
+    {
+      "type": "cpu",
+      "key": "Temperature",
+      "temp": true,
+      "format": "{temperature}",
+    },
+    {
+      "type": "gpu",
+      "format": "{name}",
+    },
+    {
+      "type": "memory",
+      "key": "RAM",
+    },
+    {
+      "type": "disk",
+      "key": "Disk",
+      "folders": "/",
+    },
+    {
+      "type": "custom",
+      "format": "├{$1} SOFTWARE {$1}┤",
+      "outputColor": "default",
+    },
+    {
+      "type": "wm",
+      "key": "Window Manager",
+    },
+    {
+      "type": "terminal",
+      "format": "{pretty-name} {version}",
+    },
+    {
+      "type": "de",
+      "key": "Desktop Environment",
+    },
+    "shell",
+    {
+      "type": "packages",
+      "format": "{all}",
+    },
+    {
+      "type": "custom",
+      "format": "╰{$1}────────────{$1}╯",
+      "outputColor": "default",
+    },
+  ],
+}

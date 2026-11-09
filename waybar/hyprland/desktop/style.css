@@ -1,0 +1,176 @@
+* {
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	text-shadow: none;
+	icon-shadow: none;
+}
+
+@define-color white	#ffffff;
+@define-color tray_color        #2f2e35;
+@define-color pulseaudio_color  #E7820E;
+@define-color cpu_color         #D55226;
+@define-color backlight_color   #90b1b1;
+@define-color battery_color     #00aa00;
+@define-color clock_color       #A64717;
+
+#waybar {
+    font-family: FiraMonoNerdFont-Regular, Roboto;
+    background-color: rgba(11,31,38,0.8); /*rgba(43, 48, 59, 0.8);*/
+    color: @white;
+    /*border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    transition-property: background-color;
+    transition-duration: .5s;*/
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#custom-arrow_tray{
+    font-size:18pt;
+    color: @tray_color;
+}
+#custom-arrow_pulseaudio{
+    font-size:18pt;
+    color: @pulseaudio_color;
+    background-color: @tray_color;
+}
+
+#custom-arrow_cpu{
+    font-size:18pt;
+    color: @cpu_color;
+    background-color: @pulseaudio_color;
+}
+#custom-arrow_backlight{
+    font-size:18pt;
+    color: @backlight_color;
+    background-color: @cpu_color;
+}
+
+#custom-arrow_battery{
+    font-size:18pt;
+    color: @battery_color;
+    background-color: @backlight_color;
+}
+#custom-arrow_clock{
+    font-size:18pt;
+    color: @clock_color;
+    background-color: @cpu_color;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#clock,
+#cpu,
+#pulseaudio,
+#tray {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: @clock_color;
+}
+
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    background-color: @cpu_color;
+    color: #000000;
+}
+
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#pulseaudio {
+    background-color: @pulseaudio_color;
+    color: #000000;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+
+#tray {
+    background-color: @tray_color;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+
+#custom-power{
+    font-size: 18pt;
+    background-color: @clock_color;  
+    padding-left: 5px;
+}

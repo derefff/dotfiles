@@ -24,6 +24,11 @@ require("config.autostart")(device)
 -- See https://wiki.hypr.land/configuring/core/environment-variables/
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.config({
+  cursor = {
+    no_hardware_cursors = true,
+  },
+})
 
 ----- PERMISSIONS
 
